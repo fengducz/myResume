@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>简历</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.css">
+	<style>
+	ul{
+		list-style: none;
+		padding-left: 0px;
+		color: white;
+	}
+	.section{
+		text-align: center;
+	}
+	.section1{
+		font-size:60px;
+		color: white;
+		text-align: center;
+	}
+	.section1 h1 {
+		display: none;
+		
+	}
+	.section2{
+		text-align: center;
+	}
+	.section2 img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	.section2 li {
+		font-size: 30px;
+	}
+
+
+	.section3{
+		text-align: center;
+	}
+
+
+
+
+	.section3 h1{
+		font-size: 40px;
+		 
+		margin-bottom: 100px;
+	}
+	#l{
+		display: block;
+		width: 800px;
+		height: 50%;
+		padding-left: 0px;
+		margin:0 auto;
+	}
+	.list{
+		display: block;
+		float: left;
+		padding-left: 30px;
+		padding-right:30px; 
+		line-height: 30px;
+		font-size: 20px;
+		text-align: center;
+		width: 140px;
+		height: 200px;
+		margin-top: 0 auto;
+	}
+
+
+
+
+
+
+
+
+	@media only screen and (max-width: 800px) {
+    .section3 h1{
+		font-size: 40px;
+		 
+		margin-bottom: 50px;
+	}
+
+    #l {
+        display: block;
+		width: 300px;
+		height: 50%;
+		padding-left: 0px;
+		margin:0 auto;
+    }
+    .list{
+		display: block;
+		float: left;
+		width: 150px;
+		padding-left: 0px;
+		padding-right:0px; 
+		line-height: 30px;
+		font-size: 20px;
+		text-align: center;
+		height: 200px;
+		margin-top: 0 auto;
+	}
+}
+
+
+	</style>
+
+
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section section1"><h1>HELLO  WORLD</h1></div>
+		<div class="section section2"><ul>
+			<li><img src="001.jpg"></li>
+			<li>尚志强</li>
+			<li>吉林大学</li>
+			<li>shangzq00@qq.com</li>
+		</ul></div>
+		<div class="section section3"><h1>技术</h1>
+		<ul id="l">
+			<li class="list"><ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+			</ul></li>
+			<li class="list"><ul>
+				<li>jQuery </li>
+				<li>AngularJS</li>
+				<li>Bootstrap</li>
+				<li>Vue.js</li>
+				<li>AJAX</li>
+			</ul></li>
+			<li class="list"><ul>
+				<li>PHP</li>
+				<li>MYSQL</li>
+				<li>Node.js</li>
+				<li>MongoDB</li>
+			</ul> </li>
+			<li class="list"><ul>
+				<li>RequireJS</li>
+				<li>Browserify</li>
+				<li>Grunt</li>
+				<li>Gulp</li>
+				<li> SVN</li>
+				<li>Git</li>
+			</ul></li>
+		</ul>
+		</div>
+		<div class="section section4"><h1>作品</h1></div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$('#fullpage').fullpage({
+			sectionsColor : ['#76EE00', '#8A2BE2','#4876FF','#CDAD00'],
+			anchors:['1', '2','3','4'],
+			navigation: true,
+        	navigationPosition: 'right',
+        	navigationTooltips: ['1', '2','3','4'],
+        	showActiveTooltip: true,
+			
+
+
+
+		});
+	});
+
+	$(document).ready(function(){
+  		$(".section1 h1").fadeIn(2000);
+	});
+
+
+
+
+	</script>
+</body>
+</html>
